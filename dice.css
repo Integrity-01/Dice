@@ -1,0 +1,120 @@
+
+#boxy {
+    width: 50%;
+    background-image: url("d11.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    text-align: center;
+    padding: 2em;
+}
+.gameIntro{
+    font-size: 300%;
+    line-height: .85em;
+    font-weight: bold;
+    text-shadow: -2px -2px 0 black;
+    
+}
+.displayBoard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.count{ 
+    font-size: 15vw;
+    border-radius: 30px;
+    
+}
+.player{
+    font-size: 190%;
+    color: black;
+    font-weight: bold;
+}
+.btn{
+    border: 2px solid;
+    font-weight: bold;
+}
+.menuBtn{
+    display: flex;
+    justify-content: end;
+    gap: 2px;
+}
+
+
+@media all and (max-width:480px) {
+    #boxy {
+        width: 100%;   
+    }
+    .gameIntro{
+        font-size: 250%;     
+    }
+    .displayBoard{
+        display: inline-block;
+    } 
+    .count{ 
+        font-size: 600%;  
+    }
+    .player{
+        font-size: 100%;
+    }      
+}
+
+@media all and (min-width:481px) and (max-width:767px) {
+    #boxy {
+        width: 100%;   
+    }
+    .gameIntro{
+        font-size: 250%;     
+    }
+    .displayBoard{
+        display: flex;
+    } 
+    .count{ 
+        font-size: 600%;  
+    
+    }
+    .player{
+        font-size: 110%;
+    
+    }      
+}
+
+@media all and (min-width:768px) and (max-width:991px) {
+    #boxy {
+        width: 70%;   
+    }
+    .gameIntro{
+        font-size: 250%;
+        line-height: normal;
+    }
+    .displayBoard{
+        display: flex;
+    } 
+    .count{ 
+        font-size: 900%;  
+    }
+    .player{
+        font-size: 200%;
+    }      
+}
+
+@media all and (min-width:992px) and (max-width:1199px) {
+    #boxy {
+        width: 60%;   
+    }
+    .gameIntro{
+        font-size: 250%;
+        line-height: normal;
+    }
+    .displayBoard{
+        display: flex;
+    } 
+    .count{ 
+        font-size: 900%;  
+    }
+    .player{
+        font-size: 225%;
+    }      
+}

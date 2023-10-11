@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Rolling Game</title>
+    <link rel="stylesheet" href="c:\Users\GLOMAX MEDIA\Desktop\bootstrap-5.3.2-dist\css\bootstrap.min.css"> 
+    <link rel="stylesheet" href="dice.css">  
+</head>
+<body>
+    <section>
+        <div class="container border" id="boxy">
+            <div class="menuBtn mb-5">
+                <button class="btn btn-md btn-warning" onclick="check()">Check</button>
+                <button class="btn btn-md btn-warning" onclick="newGame()">New Game</button>
+            </div>
+            <h1 class="gameIntro text-warning my-3">DICE ROLLING <br><span class="text-success">SCOREBOARD</span></h1>
+            <hr class="border-success border-radius-3">
+            <div class="container displayBoard">
+                <div class="container displayBoard">
+                    <p class="bg-warning px-3 player">Player 1</p>
+                    <div>
+                        <h1 class="text-light bg-success count p-4" id="player1Point">0</h1>
+                        <button class="btn btn-lg btn-warning px-4 my-3" onclick="player1Roll()">Roll</button>
+                    </div>
+                </div>
+                
+                <div class="container displayBoard">
+                    
+                    <div>
+                        <h1 class="text-light bg-success count p-4" id="player2Point">0</h1>
+                        <button class="btn btn-lg btn-warning px-4 my-3" onclick="player2Roll()">Roll</button>
+                    </div>
+                    <p class="bg-warning px-3 player">Player 2</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center p-5">
+            <p class="text-warning" >
+                Project to <span class="text-success">Kill My Loneliness</span>
+            </p>
+            <p class="text-warning">
+                Coded by <a class="text-success" href=""> Integrity</a>
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="dice.js"></script>
+    <script src="c:\Users\GLOMAX MEDIA\Desktop\bootstrap-5.3.2-dist\js\bootstrap.min.js"></script>
+</body>
+</html>
